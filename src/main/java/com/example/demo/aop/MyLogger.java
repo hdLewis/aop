@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.aop;
 
 public class MyLogger {
     public static void before(String methodName,String args){

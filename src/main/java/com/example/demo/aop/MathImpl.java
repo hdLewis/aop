@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.aop;
 
 public class MathImpl implements MathI {
     @Override
