@@ -1,4 +1,4 @@
-package com.example.demo.aop;
+package com.example.demo.proxy;
 
 public class MyLogger {
     public static void before(String methodName,String args){

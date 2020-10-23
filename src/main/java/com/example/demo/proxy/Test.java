@@ -1,4 +1,4 @@
-package com.example.demo.aop;
+package com.example.demo.proxy;
 
 public class Test {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Test {
         System.out.println(result);*/
        ProxyUtil proxyUtil=new ProxyUtil(new MathImpl());
        MathI mathI=(MathI) proxyUtil.getProxy();
-       int i=mathI.div(1,1);
+       int i=mathI.add(1,1);
         System.out.println(i);
 
     }
