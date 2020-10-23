@@ -1,5 +1,6 @@
 package com.example.demo.aop;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -12,7 +13,8 @@ public class MyLoggerAspect {
      * 必须设置value,其值为切入点表达式
      */
     @Before(value = "execution(public int com.example.demo.proxy.MathImpl.add(int,int))")
-    public  void beforeMethod(){
+    public  void beforeMethod(JoinPoint joinPoint){
+
         System.out.println("方法执行之前");
     }
 }
