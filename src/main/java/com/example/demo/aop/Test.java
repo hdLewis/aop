@@ -9,5 +9,6 @@ public class Test {
        MathI mathI=(MathI) proxyUtil.getProxy();
        int i=mathI.div(1,1);
         System.out.println(i);
+
     }
 }
